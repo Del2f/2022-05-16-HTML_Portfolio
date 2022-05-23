@@ -1,0 +1,324 @@
+body {
+    margin: 0px;
+    font-family: noto sans;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* 첫번째 페이지 */
+
+.width {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.main01 {
+    background: linear-gradient(rgb(20, 231, 143), rgb(45, 94, 199));
+    height: 500px;
+    padding: 50px 50px 0px 50px;
+    overflow: hidden;
+}
+
+.title01_box {
+    float: left;
+    width: 500px;
+    padding: 20px 0;
+}
+
+.btn {
+}
+
+.iphone img {
+    float: right;
+    width: 450px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.btn-black {
+    background-color: black;
+    color:  white;
+}
+
+@media screen and (max-width:1200px){
+    .main01 {
+        height: 550px;
+    }
+    .width{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title01_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title01_box .text{
+        text-align: center;
+    }
+
+    .iphone img{
+        width: 210px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .iphone img{
+        display: block;
+    }
+}
+
+
+
+/* 두번째 페이지 */
+
+.main02 {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.title02_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title02_box .title{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.title02_box .text {
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+@media screen and (max-width:768px){
+    .title02_box{
+        width: 500px;
+    }
+    .title02_box .title{
+        font-size: 16px;
+        margin: 5px;
+    }
+    
+    .title02_box .text {
+        font-size: 12px;
+        margin: 10px 0 20px;
+    }
+    .title02_box .btn {
+        width: 90px;
+        font-size: 3px;
+    }
+    
+}
+
+
+/* 세번째 페이지 */
+
+.main03 {
+    background-color: aquamarine;
+    padding: 40px;
+}
+
+.title03_box .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title03_box h4, h3{
+    margin: 0px;
+}
+
+.icon03 {
+    display: flex;
+    justify-content: center
+    
+}
+
+.icon03 h3 {
+    padding: 12px 0 0 0;
+}
+
+.icon03 p {
+    text-align: center;
+    padding: 10px 0 0 0;
+    margin: 0px;
+}
+
+.icon03 i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: white;
+
+}
+
+.icon_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px; 
+}
+
+@media screen and (max-width:768px){
+    .icon03 {
+        flex-wrap: wrap;
+    }
+    .icon_box {
+        width: 40%;
+        font-size: 15px;
+    }
+    .icon03 i {
+        font-size: 20px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-color: white;
+    }
+    .icon_box h3{
+        font-size: 13px;
+    }
+    .icon_box p {
+        font-size: 12px;
+    }
+}
+
+
+/* 네번째 페이지 */
+
+/* 타이틀 */
+
+.title04_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 0 0;
+}
+
+.title04_box h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+}
+
+.title04_box p {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin: 0px;
+}
+
+/* 4박스 구간 */
+
+.main04 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.prt_container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.img_box01 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(portfolio-1.jpg);
+    background-size: cover;
+}
+
+.img_box02 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(portfolio-2.jpg);
+    background-size: cover;
+}
+
+.img_box03 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(portfolio-3.jpg);
+    background-size: cover;
+}
+
+.img_box04 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(portfolio-4.jpg);
+    background-size: cover;
+}
+
+.clearboth {
+    clear: both;
+}
+
+.img_text {
+    color: white;
+    padding: 40px;
+    height: 100%;
+    transition: all 1s;
+}
+
+.img_text:hover{
+    border: 40px solid white;
+}
+
+@media screen and (max-width: 1200px){
+    .img_box01, .img_box02, .img_box03, .img_box04{
+        float: none;
+        width: 100%;
+    }
+}
+
+/* SNS */
+
+.icon04_list {
+    display: flex;
+    justify-content: center;
+}
+
+.icon04_list div {
+    padding: 20px;
+}
+
+.icon04_box i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: rgb(13, 150, 230);
+    color: white;
+}
+
+
+/* 다섯번째 페이지 */
+
+.name {
+    display: flex;
+    justify-content: center;
+}
